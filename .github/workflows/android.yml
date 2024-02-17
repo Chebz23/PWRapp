@@ -25,4 +25,4 @@ jobs:
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v3
     - name: Run build with Gradle Wrapper
-      run: ./PWRApp/gradle build
+      run: ./gradlew build
