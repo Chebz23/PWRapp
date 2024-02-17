@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/exerciseTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:fontFamily="@font/convergence"
+            android:padding="2sp"
+            android:text="@string/exerciseDtls"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/exerciseInput"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_margin="2sp"
+        android:fontFamily="@font/convergence"
+        android:hint="@string/name_of_exercise"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="2sp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#6D4C41"
+        android:textSize="11sp"  />
+
+    <TextView
+            android:id="@+id/sets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:fontFamily="@font/convergence"
+            android:padding="2sp"
+            android:text="@string/sets"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/numberSets"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="2sp"
+            android:fontFamily="@font/convergence"
+            android:hint="@string/numberSets"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:padding="2sp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHint="#6D4C41"
+            android:textSize="11sp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/reps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:fontFamily="@font/convergence"
+            android:padding="2sp"
+            android:text="@string/reps"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/numberReps"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="2sp"
+            android:fontFamily="@font/convergence"
+            android:hint="@string/numberReps"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:padding="2sp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHint="#6D4C41"
+            android:textSize="11sp" />
+
+
+</LinearLayout>

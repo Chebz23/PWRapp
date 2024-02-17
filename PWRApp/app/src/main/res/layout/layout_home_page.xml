@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_bg"
+    tools:context=".homePage">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="373dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/convergence"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:hint="@string/welcome_user"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/convergence"
+        android:text="@string/logout"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="logout"/>
+
+    <Button
+        android:id="@+id/account"
+        android:layout_width="166dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/convergence"
+        android:onClick="account"
+        android:text="@string/profile_details"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <Button
+        android:id="@+id/routines"
+        android:layout_width="166dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/convergence"
+        android:text="@string/your_routinesBtn"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="166dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/convergence"
+        android:text="@string/search_workouts"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

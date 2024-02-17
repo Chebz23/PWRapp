@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_bg"
+    tools:context=".logWorkout">
+
+
+    <TableLayout
+        android:id="@+id/exerciseTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+
+        <TableRow
+            android:id="@+id/row"
+            android:layout_width="389dp"
+            android:layout_height="match_parent"
+            android:padding="4sp"
+            android:textAlignment="center"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/exerciseTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2sp"
+                android:fontFamily="@font/convergence"
+                android:padding="2sp"
+                android:text="@string/exerciseDtls"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sets"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2sp"
+                android:fontFamily="@font/convergence"
+                android:padding="2sp"
+                android:text="@string/sets"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/numberSets"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_margin="2sp"
+                android:fontFamily="@font/convergence"
+                android:hint="@string/numberSets"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:padding="2sp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="#505050"
+                android:textSize="10sp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/reps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2sp"
+                android:fontFamily="@font/convergence"
+                android:padding="2sp"
+                android:text="@string/reps"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/numberReps"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_margin="2sp"
+                android:fontFamily="@font/convergence"
+                android:hint="@string/numberReps"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:padding="2sp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="#505050"
+                android:textSize="10sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4sp"
+            android:textAlignment="center"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/exerciseTxt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2sp"
+                android:fontFamily="@font/convergence"
+                android:padding="2sp"
+                android:text="@string/exerciseDtls"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sets2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2sp"
+                android:fontFamily="@font/convergence"
+                android:padding="2sp"
+                android:text="@string/sets"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/numberSets2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_margin="2sp"
+                android:fontFamily="@font/convergence"
+                android:hint="@string/numberSets"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:padding="2sp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="#505050"
+                android:textSize="10sp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/reps2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2sp"
+                android:fontFamily="@font/convergence"
+                android:padding="2sp"
+                android:text="@string/reps"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/numberReps2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_margin="2sp"
+                android:fontFamily="@font/convergence"
+                android:hint="@string/numberReps"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:padding="2sp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="#505050"
+                android:textSize="10sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4sp"
+            android:textAlignment="center"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/exerciseTxt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2sp"
+                android:fontFamily="@font/convergence"
+                android:padding="2sp"
+                android:text="@string/exerciseDtls"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sets3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2sp"
+                android:fontFamily="@font/convergence"
+                android:padding="2sp"
+                android:text="@string/sets"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/numberSets3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="2sp"
+                android:fontFamily="@font/convergence"
+                android:hint="@string/numberSets"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:padding="2sp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="#505050"
+                android:textSize="10sp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/reps3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2sp"
+                android:fontFamily="@font/convergence"
+                android:padding="2sp"
+                android:text="@string/reps"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/numberReps3"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_margin="2sp"
+                android:fontFamily="@font/convergence"
+                android:hint="@string/numberReps"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:padding="2sp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="#505050"
+                android:textSize="10sp" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="391dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/convergence"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/submit"
+        android:fontFamily="@font/convergence"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exerciseTable" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_bg"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/pageHeader"
+        android:layout_width="363dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/convergence"
+        android:text="@string/registration_form"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:autoSizeMinTextSize="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/infoOnPage"
+        android:layout_width="164dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/convergence"
+        android:text="@string/create_new_user"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pageHeader" />
+
+    <TextView
+        android:id="@+id/userNameLbl"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/convergence"
+        android:text="@string/user_nameText"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/userName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoOnPage" />
+
+    <TextView
+        android:id="@+id/passwordLbl"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/convergence"
+        android:text="@string/passwordText"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userNameLbl" />
+
+    <TextView
+        android:id="@+id/rePasswordLbl"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/convergence"
+        android:text="@string/re_enter_passwordText"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/rePassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLbl" />
+
+    <TextView
+        android:id="@+id/eAddressLbl"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/convergence"
+        android:text="@string/email_addressText"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/emailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rePasswordLbl" />
+
+
+    <TextView
+        android:id="@+id/ageLbl"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/convergence"
+        android:text="@string/age"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/age"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eAddressLbl" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:fontFamily="@font/convergence"
+        android:hint="@string/your_user_name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAllCaps="false"
+        android:textColorHint="#505050"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/userNameLbl"
+        app:layout_constraintTop_toBottomOf="@+id/infoOnPage"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:fontFamily="@font/convergence"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:visibility="visible"
+        android:textColorHint="#505050"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/passwordLbl"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/rePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:fontFamily="@font/convergence"
+        android:hint="@string/reEnterPassword"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#505050"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rePasswordLbl"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/emailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/convergence"
+        android:ems="10"
+        android:hint="@string/e_mail"
+        android:textColorHint="#505050"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eAddressLbl"
+        app:layout_constraintTop_toBottomOf="@+id/rePassword"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:fontFamily="@font/convergence"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:hint="@string/optional"
+        android:textColorHint="#505050"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ageLbl"
+        app:layout_constraintTop_toBottomOf="@+id/emailAddress"
+        android:importantForAutofill="no" />
+
+
+    <TextView
+        android:id="@+id/backToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/convergence"
+        android:text="@string/wrong_page_return_to_login_here"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerBtn" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="188dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/convergence"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backToLogin" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="367dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/convergence"
+        android:text="@string/disclaimer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageLbl" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

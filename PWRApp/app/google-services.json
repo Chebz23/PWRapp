@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "51828310132",
+    "project_id": "pwrapp-c973b",
+    "storage_bucket": "pwrapp-c973b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51828310132:android:36750c6cbfaefaa1fcd121",
+        "android_client_info": {
+          "package_name": "com.TM470.pwrapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51828310132-c748u0012p07g8d9hg0s73btq53ba7t5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiE_zvDyDvINpa_PfYi6fL1IcMvF4I7EM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "51828310132-c748u0012p07g8d9hg0s73btq53ba7t5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
